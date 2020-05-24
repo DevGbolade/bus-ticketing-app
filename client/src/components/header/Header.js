@@ -9,7 +9,7 @@ const Header = () => {
           <div className="nav-wrapper">
           <i className="fas fa-bus-alt"/>
             <a href="/" className="app-name">
-              Bus Ticketting App
+              Bus Ticketting
             </a>
             <ul className="right hide-on-med-and-down">
               <li>
