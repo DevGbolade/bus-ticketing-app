@@ -2,19 +2,33 @@ import React from 'react';
 import Header from './components/header/Header';
 import Modal from './components/booking-form/BookingForm';
 import BusSchedule from './components/bus-shedule/BusShedule';
+import TripDetail from './components/trip-detail'
+
+function toggleSchedule() {
+  let node = document.getElementById('bus-schedule')
+  node.style.display = node.style.display == 'none' ? 'block' : 'none'
+}
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <br />
+      <section>
+        <button className="modal-close red white-text waves-effect waves-red btn-flat" onClick={toggleSchedule} > Close
+          <i className="material-icons right">cancel</i>
+        </button>
+      </section>
       <section className="container">
         <div className="row">
           <div className="col-s12">
             <Modal />
           </div>
-          <div className="col-s12">
+          <br />
+          <div className="col-s12" id="bus-schedule">
             <BusSchedule />
+          </div>
+          <div className="col-s12" id="bus-schedule">
+            <TripDetail />
           </div>
         </div>
       </section>

@@ -33,11 +33,11 @@ handleSubmit =(e) => {
   render() {
     return (
       <div className="center">
-        <h5 className="teal-text">Welcome, having an itch-free movement is our priority...</h5>
-        <a className="waves-effect waves-light btn modal-trigger" data-target="modal1">
-          Buy your ticket here
-        </a>
-
+        <h5 className="teal-text">Welcome, having an itch-free movement is our priority........  
+          <a className="waves-effect waves-light btn modal-trigger" data-target="modal1" style={{marginLeft: '1em'}}>
+            Buy your ticket
+          </a>
+        </h5>
         <div
           ref={(Modal) => {
             this.Modal = Modal;

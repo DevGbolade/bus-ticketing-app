@@ -8,7 +8,7 @@ const date = new Date()
 
 const BusSchedule = () => {
   return (
-    <section className="bus-schedule">
+    <section className="section">
       <div className="row">
         <div className="col s6">
           <DatePicker />
