@@ -13,7 +13,7 @@ class Modal extends Component {
         console.log('Open End');
       },
       onCloseStart: () => {
-        console.log('Close Start');
+        console.log('Close Start'); 
       },
       onCloseEnd: () => {
         console.log('Close End');
@@ -45,9 +45,11 @@ handleSubmit =(e) => {
           id="modal1"
           className="modal"
         >
-          <div className="modal-content">
-          <i className="fas fa-bus-alt" style={{color: '#000'}}/>
-            <h4>Booking Form</h4>
+          <div className="modal-content">          
+            <h4>
+              <i className="fas fa-bus-alt" style={{color: '#000'}}/>
+              <span style={{ marginLeft: '1em' }}>Enter your booking info</span>
+            </h4>
             <div className="row">
               <form className="col s12" autoComplete="off" onSubmit={this.handleSubmit}>
                 <div className="row">
@@ -59,7 +61,7 @@ handleSubmit =(e) => {
 
                   <div className="input-field col s12">
                     <i className="material-icons prefix">email</i>
-                    <input id="email" type="tel" className="validate" />
+                    <input id="email" type="email" className="validate" />
                     <label htmlFor="email">Email</label>
                   </div>
                   <div className="input-field col s12">
@@ -67,10 +69,18 @@ handleSubmit =(e) => {
                     <input id="date_of_birth" type="date" className="validate" />
                     <label htmlFor="date_of_birth" className="active">Date of Birth</label>
                   </div>
+                  <div className="input-field col s12">
+                    <i className="material-icons prefix">event</i>
+                    <input id="date_of_booking" type="date" className="validate" min={new Date().toISOString().split('T')[0]} required />
+                    <label htmlFor="date_of_booking" className="active">Booking Date</label>
+                  </div>
                 </div>
                 <div className="modal-footer">
-                  <button type="submit" className="modal-close teal white-text waves-effect waves-teal btn-flat"> Book
+                  <button type="submit" className="teal white-text waves-effect waves-teal btn-flat" style={{ marginRight: '2em' }}> Book
                   <i className="material-icons right">send</i>
+                  </button>
+                  <button className="modal-close red white-text waves-effect waves-red btn-flat"> Close
+                  <i className="material-icons right">cancel</i>
                   </button>
                 </div>
               </form>

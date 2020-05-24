@@ -4,6 +4,8 @@ import DatePicker from './../date-picker/DatePickers';
 import SearchTrip from './../search-box/SearchTrip';
 import { Cars, Cards } from '../helpers/Helpers';
 
+const date = new Date()
+
 const BusSchedule = () => {
   return (
     <section className="bus-schedule">
@@ -15,8 +17,8 @@ const BusSchedule = () => {
           <SearchTrip />
         </div>
         <div className="col s12" style={{ marginTop: "1rem"}}>
-          {Cars.map(({ name, modelNum, img }) => (
-            <Cards name={name} modelNum={modelNum} img={img} key={modelNum} />
+          {Cars.map(({ name, route, img }) => (
+            <Cards name={name} route={route} img={img} date={`${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`} key={route} />
           ))}
         </div>
       </div>

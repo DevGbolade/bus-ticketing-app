@@ -17,16 +17,21 @@ class DatePickers extends React.Component {
   render() {
     return (
       <div>
-        <h5 className="teal-text">Make a schedule</h5>
-        <DatePicker
+        {/* <h5 className="teal-text">Make a schedule</h5> */}
+        <div>
+          <button type="submit" className="btn-flat booking_schedule_button booking_schedule_button_left">
+            <i className="material-icons">chevron_left</i>
+          </button>
+          <DatePicker className="booking_schedule_date"
           selected={this.state.startDate}
           onChange={this.handleChange}
-          showTimeSelect
-          timeFormat="HH:mm"
-          timeIntervals={15}
-          timeCaption="time"
-          dateFormat="MMMM d, yyyy h:mm aa"
-        />
+          dateFormat="dd-MM-yyyy"
+          styl
+          />
+          <button type="submit" className="btn-flat booking_schedule_button booking_schedule_button_right">
+            <i className="material-icons">chevron_right</i>
+          </button>
+        </div>
       </div>
     );
   }
