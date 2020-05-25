@@ -1,10 +1,8 @@
-'use strict';
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
   const Bus = sequelize.define('Bus', {
     number: DataTypes.NUMBER
   }, {});
-  Bus.associate = function(models) {
-    // associations can be defined here
-  };
+  // associations can be defined here
+  Bus.associate = (models) => models;
   return Bus;
 };

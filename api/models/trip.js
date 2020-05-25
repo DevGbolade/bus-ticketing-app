@@ -1,12 +1,10 @@
-'use strict';
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
   const Trip = sequelize.define('Trip', {
     dateTime: DataTypes.STRING,
     busId: DataTypes.STRING,
     routeId: DataTypes.STRING
   }, {});
-  Trip.associate = function(models) {
-    // associations can be defined here
-  };
+  // associations can be defined here
+  Trip.associate = (models) => models;
   return Trip;
 };
