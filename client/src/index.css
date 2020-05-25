@@ -1,7 +1,57 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Oswald', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+
+.booking_schedule_date {
+  border-bottom: none !important;
+  width: 5.5em !important;
+}
+.booking_schedule_date :focus {
+  border-bottom: none;
+  width: 5.3em !important;
+}
+.booking_schedule_button {
+  padding: 0 !important;
+}
+.booking_schedule_button :hover {
+  border: 1px solid black;
+  background-color: rgba(128, 128, 128, 0.4);
+  border-radius: 20%;
+  padding: 0 0.3em;
+}
+
+.trip_details li {
+  text-align: start;
+}
+.trip_details li span {
+  margin-top: 2px;
+  position: absolute;
+}
+.trip_details li strong {
+  margin-top: 2px;
+  position: absolute;
+  padding-left: 5px;
+  font-weight: 600;
+}
+
+.section {
+  padding-top: 1rem;
+  border: 1px solid teal;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.bus-name {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.trip_details_route li {
+  text-align: center;
 }

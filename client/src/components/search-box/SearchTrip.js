@@ -2,18 +2,13 @@ import React from 'react';
 
 const SearchTrip = () => {
   return (
-    <div className="row">
-      <form className="col s12">
-        <div className="row">
-          <h5 className="teal-text">Search for trips</h5>
-          <div className="input-field col s12">
+      <form className="">
+          <div className="input-field" style={{margin: '0 auto'}} >
             <i className="material-icons prefix">search</i>
-            <input type="text" className="validate" id="search" />
+            <input type="text" className="validate" id="search"  style={{marginBottom: '0'}}/>
             <label htmlFor="search">Search</label>
           </div>
-        </div>
       </form>
-    </div>
   );
 };
 
