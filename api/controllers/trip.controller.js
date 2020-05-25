@@ -1,10 +1,10 @@
 import database from '../models';
 /**
- * @class UserController
- * @description Controllers for Users
- * @exports UsersController
+ * @class TripController
+ * @description Controllers for Trips
+ * @exports TripsController
  */
-export default class UsersController {
+export default class TripController {
   /**
    * @method CreateTrip
    * @description Method for booking a Trip
@@ -14,8 +14,8 @@ export default class UsersController {
    */
   static async bookOneTrip(req, res) {
     try {
-      const user = await database.Trip.create(req.body);
-      const response = user.toJSON();
+      const trip = await database.Trip.create(req.body);
+      const response = trip.toJSON();
       return res.status(201).json({
         status: 'success',
         data: { ...response }

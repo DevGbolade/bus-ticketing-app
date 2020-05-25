@@ -1,10 +1,10 @@
 import database from '../models';
 /**
- * @class UserController
- * @description Controllers for Users
- * @exports UsersController
+ * @class BusController
+ * @description Controllers for Buses
+ * @exports BusController
  */
-export default class UsersController {
+export default class BusController {
   /**
    * @method CreateOneBus
    * @description Method for creating a Bus
