@@ -13,11 +13,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <section>
-        <button className="modal-close red white-text waves-effect waves-red btn-flat" onClick={toggleSchedule} > Close
-          <i className="material-icons right">cancel</i>
-        </button>
-      </section>
       <section className="container">
         <div className="row">
           <div className="col-s12">
