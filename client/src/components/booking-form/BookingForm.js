@@ -55,18 +55,18 @@ handleSubmit =(e) => {
                 <div className="row">
                   <div className="input-field col s12">
                     <i className="material-icons prefix">account_circle</i>
-                    <input id="icon_prefix" type="text" className="validate" />
+                    <input id="icon_prefix" type="text" className="validate" required />
                     <label htmlFor="icon_prefix">Name</label>
                   </div>
 
                   <div className="input-field col s12">
                     <i className="material-icons prefix">email</i>
-                    <input id="email" type="email" className="validate" />
+                    <input id="email" type="email" className="validate" required />
                     <label htmlFor="email">Email</label>
                   </div>
                   <div className="input-field col s12">
                     <i className="material-icons prefix">event</i>
-                    <input id="date_of_birth" type="date" className="validate" />
+                    <input id="date_of_birth" type="date" className="validate" required />
                     <label htmlFor="date_of_birth" className="active">Date of Birth</label>
                   </div>
                   <div className="input-field col s12">

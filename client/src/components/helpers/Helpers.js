@@ -30,7 +30,7 @@ const Cards = ({ name, route, date, img }) => {
   return (
     
       <div className="col s12 m4 l3">
-        <div className="card">
+        <div className="card" style={{cursor: 'pointer'}}>
           <div className="card-image">
             <img src={img} alt={name} style={{height: "200px", width: "100%" }} />
             <span className="card-title">{name}</span>
