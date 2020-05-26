@@ -4,6 +4,8 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import TripRouter from './routes/trip.route';
 import BusRouter from './routes/bus.route';
+import TicketRouter from './routes/ticket.route';
+
 
 const app = express();
 app.use(morgan('dev'));
@@ -22,6 +24,7 @@ app.use(
 
 app.use('/api/v1/', TripRouter);
 app.use('/api/v1/', BusRouter);
+app.use('/api/v1/', TicketRouter);
 app.get('/', (req, res) => res.status(200).json({
   status: 'succes',
   data: 'data'
