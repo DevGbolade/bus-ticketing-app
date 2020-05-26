@@ -22,6 +22,11 @@ app.use(
 
 app.use('/api/v1/', TripRouter);
 app.use('/api/v1/', BusRouter);
+app.get('/', (req, res) => res.status(200).json({
+  status: 'succes',
+  data: 'data'
+
+}));
 
 
 app.all('*', (err, req, res, next) => {

@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import TripController from '../controllers/trip.controller';
+import BusController from '../controllers/bus.controller';
 
 const router = Router();
 
-router.get('/trip', TripController.bookOneTrip);
+router.post('/bus', BusController.CreatOneBus);
 
 
 export default router;
