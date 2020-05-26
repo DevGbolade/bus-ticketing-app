@@ -27,4 +27,19 @@ export default class TripController {
       });
     }
   }
+
+  static async getAllTickets(req, res) {
+    try {
+      const trips = await database.Ticket.findAll();
+      return res.status(201).json({
+        status: 'success',
+        data: trips
+      });
+    } catch (error) {
+      return res.status(400).json({
+        status: 'error',
+        message: error.message
+      });
+    }
+  }
 }
